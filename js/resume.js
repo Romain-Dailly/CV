@@ -1,28 +1,29 @@
-(function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
-        return false;
+//Scrollspy in nav
+$('body').scrollspy({
+  target: '#sideNav'
+});
+//Smooth scroll
+function anchorLinkHandler(e) {
+  const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+  e.preventDefault();
+  const targetID = this.getAttribute("href");
+  const targetAnchor = document.querySelector(targetID);
+  if (!targetAnchor) return;
+  const originalTop = distanceToTop(targetAnchor);
+  window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" }); 
+  const checkIfDone = setInterval(function() {
+      const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+      if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          targetAnchor.tabIndex = "-1";
+          targetAnchor.focus();
+          window.history.pushState("", "", targetID);
+          clearInterval(checkIfDone);
       }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#sideNav'
-  });
-
-})(jQuery); // End of use strict
+      let offsetHeight = 0.6*(window.innerHeight)
+      inView.offset({
+        bottom:offsetHeight
+      });
+  }, 100);
+}
+const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler))
