@@ -55,7 +55,10 @@ p.lead {
     line-height: 3.5rem;
     margin-right: 1rem
 }
-
+.logosql{
+    max-height: 55px;
+    padding-bottom: 2px;
+}
 .social-icons a:last-child {
     margin-right: 0
 }
@@ -68,9 +71,9 @@ p.lead {
     font-size: 3rem
 }
 
-.dev-icons .list-inline-item i:hover {
+/* .dev-icons .list-inline-item i:hover {
     color: #2D882D
-}
+} */
 
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 800;
