@@ -151,7 +151,7 @@ section.resume-section {
     max-width: 75rem;
 }
 section.resume-section.projects {
-    max-width: 100%;
+    max-width: 100%!important;
 }
 
 section.resume-section .resume-item .resume-date {
