@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Romain Dailly</title>
+  <title>CV Romain Dailly</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="css/resume.min.css" rel="stylesheet">
+  <link href="css/resume.print.css" media='print' rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -54,23 +55,26 @@
   </nav>
 
   <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="introduction">
+    <div class='printAlert'>cv complet en ligne <a href='https://romain-dailly.github.io/CV/'>ici</a></div>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center intro" id="introduction">
       <div class="w-100">
         <h1 class="mb-0">Romain
           <span class="text-primary">Dailly</span>
         </h1>
-        <div class="subheading mb-5">Nantes +33684929910 </br>
-          <a href="mailto:loops51@protonmail.com">loops51@protonmail.com</a>
+        <div class="subheading mb-5 coordinates">Nantes +33684929910 </br>
+          loops51@protonmail.com</br>
+          <a class='dlLink' href="javascript:window.print()">Télécharger le CV en PDF</a>
         </div>
-        <h3>Developpeur WEB JS / React / Node.JS</h3>
-        <p class="lead mb-5">Dans le cadre d'une reconversion professionnelle, je me forme actuellement à la Wild Code
-          School à Nantes, en JavaScript (ES6), React / Node.js.</br> 
+        <h3>Developpeur WEB Front-end (React / Angular) </h3>
+        <p class="lead mb-5">Dans le cadre d'une reconversion professionnelle, je me suis formé, du 25 février au 26 juillet 2019, à la Wild Code
+          School à Nantes, en JavaScript (ES6), React / Node.js.</br>
+          A l'issue de cette formation, j'ai effectué un stage de 4 mois au sein de l'entreprise Fifty Truck, au cours duquel j'ai pu développer des compétences Fullstack.</br>
           Riche d'expériences professionnelles variées et passionné par le développement, je m'adapte facilement à toutes
           les situations.</br> 
-          L'éthique est pour moi quelque chose d'essentiel. Je suis, par exemple, très intéréssé par le GreenIT, qui me semble être une approche d'avenir.</br>
-          Je recherche un stage de 4 mois, à partir d'août 2019, afin de m'enrichir tant au niveau technique qu'humain et valider 
-          les connaissances que j'ai acquises en formation.</p>
+          L'éthique est pour moi quelque chose d'essentiel. Je suis très intéréssé par le GreenIT, qui me semble être une approche d'avenir.
+          Les valeurs humaines, la conscience écologique et l'intégrité éthique sont pour moi fondamentaux pour faire un environnement de travail au sein duquel 
+          j'aurai à cœur de me dépasser.</br>
+          Etant junior, et n'ayant qu'une courte expérience en Fullstack, je recherche un poste de développeur Front-end en temps plein.</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/romain-dailly-4b705617b/">
             <i class="fab fa-linkedin-in"></i>
@@ -83,55 +87,70 @@
     </section>
 
     <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projets">
-      <div class="card-deck">
-        <div class="card">
-          <img src="./img/Appli météosmall.png" class="card-img-top" alt="meteo">
-          <div class="card-body">
-            <h5 class="card-title align-center">Application météo</h5>
-            <p class="card-text">Application météo réalisée en solo en 30h.</p>
-            <p class="card-text">Technologies: React, Bootstrap, l'API Accuweather.</p>
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center projects" id="projets">
+      <div class="w-100">
+        <h2 class="mb-5">Projets</h2>
+        <div class="card-deck">
+          <div class="card">
+            <a href='./img/FiftyTruckDashBoardTest.png' target='blank' title='Lien vers un screenshot'><img src="./img/FiftyTruckDashBoardTestSmallResized.png" class="card-img-top" alt="fifty"></a>
+            <div class="card-body">
+              <h5 class="card-title align-center">Dashboard FiftyTruck</h5>
+              <p class="card-text">Prototype de tableau de bord réalisé au sein d'un stage de 4 mois, en autonomie, qui permet à l'utilisateur de visualiser son utilisation
+              de FiftyTruck à travers des graphiques sur lesquels il a la possibilité d'appliquer des filtres et d'enregistrer des groupes de filtres dans des réglages personnalisés.
+              </p>
+              <p class="card-text">
+                Frontend : Angular 8, Bootstrap, Angular Material, Ng2Charts, Chart.js, ngxTranslate, ngxCookieService, RXJS, Swagger (authentification).</br>
+                Backend : API en Lumen 6 (Micro-framework Laravel PHP), MySql, Swagger pour la récupération de data sur l'Api de fiftyTruck.
+                </p>
+            </div>
+            <div class="card-footer m-0">
+              <a href="https://github.com/Romain-Dailly/RD-Meteo" class="d-flex justify-content-center" title='Vers le projet Github'>
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
           </div>
-          <div class="card-footer m-0">
-            <a href="https://romain-dailly-meteo.netlify.com/"
-              class="d-flex justify-content-center m-2">https://romain-dailly-meteo</a>
-            <a href="https://github.com/Romain-Dailly/RD-Meteo" class="d-flex justify-content-center">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
+          <div class="card">
+            <a href="https://romain-dailly-meteo.netlify.com/" target='blank' title='Voir le site'><img src="./img/Appli météosmall.png" class="card-img-top" alt="meteo"></a>
+            <div class="card-body">
+              <h5 class="card-title align-center">Application météo</h5>
+              <p class="card-text">Application météo réalisée en solo en 30h.</p>
+              <p class="card-text">Technologies: React, Bootstrap, l'API Accuweather.</p>
+            </div>
+            <div class="card-footer m-0">
+              <a href="https://github.com/Romain-Dailly/RD-Meteo" class="d-flex justify-content-center" title='Vers le projet Github'>
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="./img/SUPER POULEsmall.png" class="card-img-top" alt="superpoule">
-          <div class="card-body">
-            <h5 class="card-title">Jeu SuperPoule</h5>
-            <p class="card-text">Projet de jeu vidéo réalisé en 24h à 4 lors d'un hackaton dans le cadre de la formation
-              de la Wild Code School.</p>
-            <p class="card-text">Technologies: VanillaJS, Bootstrap, Phazer.</p>
-          </div>
-          <div class="card-footer m-0">
-            <!-- <a href="https://romain-dailly-meteo.netlify.com/" 
-                  class="d-flex justify-content-center m-2">https://superpoule</a> -->
-            <a href="https://github.com/Romain-Dailly/SuperPoule" class="d-flex justify-content-center">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./img/Scaneatsmall.png" class="card-img-top" alt="scaneat">
-          <div class="card-body">
-            <h5 class="card-title">ScanEat</h5>
-            <p class="card-text">Projet à la Wild Code School, application web mobile, qui permet de scanner des
-              produits alimentaires afin d'obtenir des informations nutritionnelles et environnementales. Réalisé à 4 en
-              3 semaines.</p>
-            <p class="card-text">Technologies: React, React-materialize, NPM, l'API openFoodFacts, le composant
-              Quagga.js(scanner).</p>
-          </div>
-          <div class="card-footer m-0">
-            <a href="https://heuristic-mcclintock-8cdd49.netlify.com/" class="d-flex justify-content-center m-2">https://scaneat</a>
-            <a href="https://github.com/Romain-Dailly/ScanEat" class="d-flex justify-content-center">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
+          <!-- <div class="card">
+            <img src="./img/SUPER POULEsmall.png" class="card-img-top" alt="superpoule">
+            <div class="card-body">
+              <h5 class="card-title">Jeu SuperPoule</h5>
+              <p class="card-text">Projet de jeu vidéo réalisé en 24h à 4 lors d'un hackaton dans le cadre de la formation
+                de la Wild Code School.</p>
+              <p class="card-text">Technologies: VanillaJS, Bootstrap, Phazer.</p>
+            </div>
+            <div class="card-footer m-0">
+              <a href="https://github.com/Romain-Dailly/SuperPoule" class="d-flex justify-content-center" title='Vers le projet Github'>
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div> -->
+          <div class="card">
+            <a href="https://heuristic-mcclintock-8cdd49.netlify.com/" target='blank' title='Voir le site'><img src="./img/Scaneatsmall.png" class="card-img-top" alt="scaneat"></a>
+            <div class="card-body">
+              <h5 class="card-title">ScanEat</h5>
+              <p class="card-text">Projet à la Wild Code School, application web mobile, qui permet de scanner des
+                produits alimentaires afin d'obtenir des informations nutritionnelles et environnementales. Réalisé à 4 en
+                3 semaines.</p>
+              <p class="card-text">Technologies: React, React-materialize, NPM, l'API openFoodFacts, le composant
+                Quagga.js(scanner).</p>
+            </div>
+            <div class="card-footer m-0">
+              <a href="https://github.com/Romain-Dailly/ScanEat" class="d-flex justify-content-center" title='Vers le projet Github'>
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -139,94 +158,104 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="competences">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center skills" id="competences">
       <div class="w-100">
-        <h2 class="mb-5">Compétences</h2>
+        <h2 class="mb-5 printTitle">Compétences</h2>
         <div class="subheading mb-3">Langages de développement &amp; Outils</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <i class="fab fa-linux"></i>
+            <i class="fab fa-linux" title='Linux'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
+            <i class="fab fa-html5" title='Html'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-css3-alt" title='Css'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-js"></i>
+            <i class="fab fa-js" title='Javascript'></i>
           </li>
           <li class="list-inline-item">
-            <img class="logosql"src="./img/mysql-1.png"></i>
+            <img class="logosql"src="./img/mysql-1.png" title='MySql'></i>
+            <img class="logosqlBlack"src="./img/mysql-1.svg" title='MySql'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-php" title='PHP'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-react"></i>
+            <i class="fab fa-bootstrap" title='Bootstrap'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-node"></i>
+            <i class="fab fa-react" title='React'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
+            <i class="fab fa-angular" title='Angular'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-git"></i>
+            <i class="fab fa-laravel" title='Laravel(Lumen)'></i>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-trello"></i>
+            <i class="fab fa-node" title='Node'></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm" title='NPM'></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-git" title='Git'></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-trello" title='Trello'></i>
           </li>
         </ul>
         <div class="subheading mb-3">Méthodes</div>
-        <ul class="fa-ul mb-0">
+        <ul class="fa-ul mb-0 methods">
           <li>
             <i class="fa-li fa fa-check"></i>
-            Mobile-First, Design Responsive</li>
+            <p>Mobile-First, Design Responsive</p></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Developpement Agile &amp; Scrum</li>
+            <p>Developpement Agile &amp; Scrum</p></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Github</li>
+            <p>Github</p></li>
           <li>
             <i class="fa-li fa fa-check"></i>
-            Veille technologique</li>
+            <p>Veille technologique</p></li>
         </ul>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="sskills">
-      <div class="w-100">
-        <h2 class="mb-5">Soft Skills</h2>
-        <div class="subheading mb-3">Personnellement</div>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center softSkills" id="sskills">
+      <div class="w-100 printSoftSkills">
+        <h2 class="mb-5 softSkillsTitle">Soft Skills</h2>
         <ul class="fa-ul mb-0">
+          <div class="subheading mb-3">Personnellement</div>
           <li>
             <i class="fa-li fa "></i>
-            Passionné par la découverte et l'apprentissage</li>
+            <p>Passionné par la découverte et l'apprentissage</p></li>
           <li>
             <i class="fa-li fa "></i>
-            Autonome et adaptable</li>
+            <p>Autonome et adaptable</p></li>
           <li>
             <i class="fa-li fa "></i>
-            Persévérant et résistant face au stress</li>
+            <p>Persévérant et résistant face au stress</p></li>
           <li>
             <i class="fa-li fa "></i>
-            Créatif</li>
+            <p>Créatif</p></li>
         </ul>
-        <div class="subheading mt-3 mb-3">En équipe</div>
         <ul class="fa-ul mb-0">
+          <div class="subheading mb-3">En équipe</div>
           <li>
             <i class="fa-li fa "></i>
-            Sens du collectif et humilité au service du projet</li>
+            <p>Sens du collectif et humilité au service du projet</p></li>
           <li>
             <i class="fa-li fa "></i>
-            Courtois et négociateur</li>
+            <p>Courtois et négociateur</p></li>
           <li>
             <i class="fa-li fa "></i>
-            Pédagogue et empathique</li>
+            <p>Pédagogue et empathique</p></li>
         </ul>
       </div>
   </div>
@@ -234,24 +263,37 @@
 
   <hr class="m-0">
 
-  <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+  <section class="resume-section p-3 p-lg-5 d-flex justify-content-center xp" id="experience">
     <div class="w-100">
-      <h2 class="mb-5">Experience</h2>
+      <h2 class="mb-5 printTitle">Experience</h2>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="resume-content">
-          <h3 class="mb-0">Developpeur Web</h3>
+          <h3 class="mb-0 printH3">Developpeur Web Fullstack stagiaire</h3>
+          <div class="subheading mb-3">FiftyTruck</div>
+          <p>Au cours de ce stage, on m'a confié un projet de tableau de bord, de recueillir le besoin par des ateliers client et de développer un prototype en fullstack. 
+          J'ai choisi d'utiliser les technologies employées par l'entreprise, à savoir Angular et Laravel. Je me suis donc formé à Angular 8, PHP 7, Laravel Lumen 6.
+          Le prototype est fonctionnel et attend d'être déployé.
+          </p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">Aout 2019 - Décembre 2019</span>
+        </div>
+      </div>
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-content">
+          <h3 class="mb-0 printH3">Developpeur Web</h3>
           <div class="subheading mb-3">Wild Code School</div>
           <p>Au cours de la formation, nous avons réalisé 3 projets en développement AGILE, de manière professionnelle
             afin de découvrir les enjeux et le contexte. Pour cela, nous avons utilisé les technologies nécessaires à la réalisation
             des-dits projets. Projets visibles sur mon <a href="https://github.com/Romain-Dailly">Github</a>.</p>
         </div>
         <div class="resume-date text-md-right">
-          <span class="text-primary">Février 2019 - Present</span>
+          <span class="text-primary">Février 2019 - Juillet 2019</span>
         </div>
       </div>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="resume-content">
-          <h3 class="mb-0">Musicien</h3>
+          <h3 class="mb-0 printH3">Musicien</h3>
           <div class="subheading mb-3">Cafés-Concerts, Festivals, Salles</div>
           <p>Connaissance des logiciels d'enregistrements, des conditions studios et Live, de la gestion de groupe,
             ainsi que la gestion de projet d'album.</p>
@@ -262,7 +304,7 @@
       </div>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="resume-content">
-          <h3 class="mb-0">Intérim</h3>
+          <h3 class="mb-0 printH3">Intérim</h3>
           <div class="subheading mb-3">Agences d'intérim</div>
           <p>J'ai eu l'occasion de cotoyer un grand nombre de milieux professionnels et corps de métiers qui m'ont
             apporté une réelle polyvalence. J'ai notamment éxpérimenté le métier de chauffeur poids lourd, ce qui m'a
@@ -279,13 +321,12 @@
 
   <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="formation">
     <div class="w-100">
-      <h2 class="mb-5">Formation</h2>
+      <h2 class="mb-5 printTitle">Formation</h2>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
         <div class="resume-content">
-          <h3 class="mb-0">Wild Code School - Nantes - 44</h3>
+          <h3 class="mb-0 printH3">Wild Code School - Nantes - 44</h3>
           <div class="subheading mb-3">Developpeur Web / Web mobile</div>
-          <div>HTML, CSS, JAVASCRIPT (ES6), GIT, GITHUB, BOOTSTRAP, REACT, NODE.js, Méthode Agile, SCRUM, mySQL.</div>
-          <p></p>
+          <div><p>HTML, CSS, JAVASCRIPT (ES6), GIT, GITHUB, BOOTSTRAP, REACT, NODE.js, Méthode Agile, SCRUM, mySQL.</p></div>
         </div>
         <div class="resume-date text-md-right">
           <span class="text-primary">Février 2019 - Juillet 2019</span>
@@ -293,11 +334,10 @@
       </div>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
         <div class="resume-content">
-          <h3 class="mb-0">CNAM - IFORIS - Angers - 49</h3>
+          <h3 class="mb-0 printH3">CNAM - IFORIS - Angers - 49</h3>
           <div class="subheading mb-3">BPJEPS animateur socioculturel, musiques actuelles et cultures urbaines</div>
-          <div>Gestion de groupes, associations, éducation populaire, travail en équipe, communication, organisation
-            d'évènements.</div>
-          <p></p>
+          <div><p>Gestion de groupes, associations, éducation populaire, travail en équipe, communication, organisation
+            d'évènements.</p></div>
         </div>
         <div class="resume-date text-md-right">
           <span class="text-primary">Septembre 2008 - Juin 2009</span>
@@ -305,10 +345,10 @@
       </div>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-3">
         <div class="resume-content">
-          <h3 class="mb-0">IRTIS - Rochefort-sur-Mer - 17</h3>
+          <h3 class="mb-0 printH3">IRTIS - Rochefort-sur-Mer - 17</h3>
           <div class="subheading mb-3">Certificat Supérieur Audiovisuel</div>
-          <div>Techniques de l'image et du son, analyse filmique, réalisation.</div>
-          <p></p>
+          <div><p>Techniques de l'image et du son, analyse filmique, réalisation.</p></div>
+          
         </div>
         <div class="resume-date text-md-right">
           <span class="text-primary">Septembre 2002 - Juin 2004</span>
@@ -316,7 +356,7 @@
       </div>
       <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
         <div class="resume-content">
-          <h3 class="mb-0">Lycée Merleau-Ponty - Rochefort-sur-Mer - 17</h3>
+          <h3 class="mb-0 printH3">Lycée Merleau-Ponty - Rochefort-sur-Mer - 17</h3>
           <div class="subheading mb-3">Baccalauréat Littéraire option cinéma-audiovisuel</div>
           <div></div>
           <p></p>
@@ -328,7 +368,7 @@
     </div>
   </section>
 
-  <hr class="m-0">
+  <!-- <hr class="m-0"> -->
 
   </div>
 

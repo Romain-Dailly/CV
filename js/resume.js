@@ -27,4 +27,4 @@ function anchorLinkHandler(e) {
   }, 100);
 }
 const linksToAnchors = document.querySelectorAll('a[href^="#"]');
-linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler))
+linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
