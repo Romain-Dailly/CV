@@ -8,7 +8,7 @@ body {
   position:absolute;
   right:50px;
   top:50px;
-  opacity:0.3;
+  opacity:0.5;
   font-style:italic;
   text-transform: uppercase;
 }
@@ -25,15 +25,15 @@ h2 {
 }
 h3 {
   font-size: 1.4rem;
-  margin-top:10px;
+  margin-top:15px;
 }
 .printH3{
   font-size: 1rem;
 }
 .printTitle {
   text-align:center;
-  margin-bottom: 5px!important;
-  margin-top:10px!important;
+  margin-bottom: 25px!important;
+  margin-top:32px!important;
   padding:0;
 }
 .softSkillsTitle {
@@ -53,6 +53,12 @@ p.lead, p{
 }
 p.lead {
   font-weight:500;
+}
+p.print {
+  display:block;
+  font-size: 0.6rem;
+  margin-bottom:0!important;
+  margin-top:15px!important;
 }
 .social-icons{
   display:none;
@@ -81,6 +87,9 @@ section.resume-section {
 .resume-date {
   font-size:0.8rem;
 }
+.card-footer {
+  display:none;
+}
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
@@ -91,10 +100,13 @@ section.resume-section {
 .subheading.coordinates {
   font-size: 1rem;
 }
-section.projects {
+/* section.projects {
   display:none!important;
+} */
+section.softSkills {
+  margin-bottom:60px!important;
 }
-section.intro, section.skills, section.softSkills {
+section.intro, section.skills, section.softSkills, section.projects {
   text-align:center;
 }
 .printSoftSkills {
