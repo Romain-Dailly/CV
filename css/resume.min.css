@@ -193,6 +193,9 @@ a {
 a:active, a:focus, a:hover {
     color: #0d9641
 }
+a.linkToLetter {
+    font-style: italic;
+  }
 .card-footer{
     bottom:0;
 }

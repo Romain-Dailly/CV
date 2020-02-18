@@ -46,6 +46,9 @@ a {
 a.dlLink {
   display:none;
 }
+a.linkToLetter {
+  display:none;
+}
 p.lead, p{
   font-size: 0.8rem;
   font-weight: 400;
